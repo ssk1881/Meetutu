@@ -48,7 +48,15 @@ header("location:index.php");
         height: 100% !important;
     }
         </style>
-        
+        <script>
+function numberwhatsapp()
+{
+	var num=document.getElementById("numtext").value;
+	console.log(num);
+	num='91'+num;
+   window.location.href = 'https://api.whatsapp.com/send?phone='+num+'&text=Hey%27i%20want%20to%20connect%20with%20you%20from%20meetutu';
+}
+</script>
 <script>
 	function mapload(){
  if (navigator.geolocation) {
@@ -201,6 +209,34 @@ header("location:index.php");
 				</div>
 
                         	<button type="submit" name="request-submit" class="btn btn-primary btn-lg">Request Meet</button>
+                        	<br><br><br><br><br><br><br><br><br>
+                        </form>
+                    </div>
+
+                    </div>
+                   
+                </div>
+            </div>
+
+</section> 
+ <hr class="colorgraph">
+<section id="about">
+	 <div class="container">
+                <div class="row">
+
+                    <div class="section-title text-center wow fadeInUp">
+                        <h1>Whatsapp Message</h1>    
+                        <h5>Now you can send whatsapp messages to the person and meet up with them.</h5>
+
+
+	<div class="col-xs-12 col-sm-8 col-md-8 col-sm-offset-2 col-md-offset-2">
+		<form role="form" >
+				<hr class="colorgraph">
+				<div class="form-group">
+                    <input type="text" name="text" id="numtext" class="form-control input-lg" placeholder="Whatsapp Number">
+				</div>
+
+                        	<button type="button" onclick="numberwhatsapp();" name="request-submit" class="btn btn-info btn-lg">Send</button>
                         	<br><br><br><br><br><br><br><br><br>
                         </form>
                     </div>
